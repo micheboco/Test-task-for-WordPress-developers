@@ -1,0 +1,206 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0px auto;
+	position: relative;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0px;
+	padding: 0px;
+}
+
+p {
+	margin: 0px;
+	padding: 0px;
+}
+
+ul, 
+ol, 
+li {
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+
+a, 
+a:hover {
+	text-decoration: none;
+	color: #000000;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../font/OpenSans-Regular.eot');
+    src: url('../font/OpenSans-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../font/OpenSans-Regular.woff2') format('woff2'),
+        url('../font/OpenSans-Regular.woff') format('woff'),
+        url('../font/OpenSans-Regular.ttf') format('truetype'),
+        url('../font/OpenSans-Regular.svg#OpenSans-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gallient';
+    src: url('../font/Gallient-Regular.eot');
+    src: url('../font/Gallient-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../font/Gallient-Regular.woff2') format('woff2'),
+        url('../font/Gallient-Regular.woff') format('woff'),
+        url('../font/Gallient-Regular.ttf') format('truetype'),
+        url('../font/Gallient-Regular.svg#Gallient-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+section.List-Gallery-Section {
+    background: #f6f3f1;
+    padding: 100px 0px;
+    min-height: 100vh;
+}
+.List-Gallery-container {
+    max-width: 1280px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.List-Gallery-Title {
+	margin-bottom: 90px;
+}
+.List-Gallery-Title h2 {
+	font-family: 'Gallient';
+	font-size: 56px;
+	font-weight: 500;
+	line-height: 70px;
+	color: #3C3C3C;
+	text-align: center;
+}
+
+.List-Gallery-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -15px;
+    margin-right: -15px;
+
+}
+.Gallery-Col-4 {
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 30px;   
+    
+}
+.Gallery-Item {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+.Gallery-Item .Gallery-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.Gallery-Item h3 {
+    font-family: 'Gallient';
+    font-size: 34px;
+    font-weight: 500;
+    line-height: 42px;
+    color: #3C3C3C;
+    text-align: center;
+    margin-bottom: 16px;
+}
+.Gallery-Item p {
+    font-family: 'Open Sans';
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    color: #3C3C3C;
+    text-align: center;
+    padding: 0px 20px;
+    margin-bottom: 30px;
+}
+.Gallery-btn-area {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: auto;
+}
+.Gallery-btn-area a {
+    font-family: 'Open Sans';
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    color: #111111;
+    background-color: rgb(168 8 8 / 20%);
+    padding: 16px 40px;
+    border-radius: 6px;
+}
+
+@media screen and (max-width: 1200px) {
+	.Gallery-Item h3 {
+	    font-size: 28px;
+	    line-height: 36px;
+	    margin-bottom: 10px;
+	}
+	.Gallery-Item p {
+	    padding: 0px 10px;
+	}
+}
+
+@media screen and (max-width: 991px) {
+.List-Gallery-Title {
+    margin-bottom: 60px;
+}
+.List-Gallery-Title h2 {
+    font-size: 46px;
+    line-height: 60px;
+}
+.Gallery-Item .Gallery-icon img {
+    height: 90px;
+}
+.Gallery-Item p {
+    font-size: 15px;
+    line-height: 22px;
+    padding: 0px 0px;
+    margin-bottom: 24px;
+}
+.Gallery-btn-area a {
+    font-size: 15px;
+    line-height: 20px;
+    padding: 14px 32px;
+}
+
+}
+
+@media screen and (max-width: 767px) {
+
+section.List-Gallery-Section {
+    padding: 60px 0px;
+}
+.List-Gallery-Title {
+    margin-bottom: 50px;
+}
+.List-Gallery-Title h2 {
+    font-size: 36px;
+    line-height: 46px;
+}
+.Gallery-Col-4 {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 40px;
+}
+
+}
